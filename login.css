@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            width: 100%;
+            background-image: url(./Images/7.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        
+}
+
+.form-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+h1{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+   
+
+}
+
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid white ;
+    color: white;
+}
+
+.input-box label{
+    position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        pointer-events: none;
+        transition: 0.7s;
+}
+
+input:focus ~ label,
+input:valid~label  {
+top: -5px;
+}
+
+.input-box i:focus ~ label,
+.input-box i:valid~label  {
+top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    padding: 0 35px 0 5px;
+}
+.input-box i{
+    position: absolute;
+    background: transparent;
+    right: 8px;
+    color: rgb(62, 236, 246) ;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forger{
+    margin: -15px 0 15px;
+    font-size: 0.9em;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+.forger label input{
+    margin-right:5px ;
+}
+
+.forger label a{
+    color: white;
+    margin-left: 76px;
+    text-decoration: none;
+    
+}
+
+.forger label a:hover{
+    text-decoration: underline;
+    transition: 0.8s;
+}
+
+button{
+    width: 100%;
+    padding: 13px;
+    border-radius: 6px;
+    box-shadow: 5px 15px 23px black;
+    margin-bottom: 30px;
+    font-size: 1.3em;
+    border: none;
+    outline: none;
+    background-color: rgb(14, 224, 235) ;
+    backdrop-filter: blur(20px);
+}
+button:hover{
+       
+    color: white;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.register{
+    color: white;
+}
+
+.register p a{
+    text-decoration: none;
+    color: white;
+    margin-left: 90px;
+   
+}
+.register p a:hover{
+    text-decoration: underline;  
+    transition: 0.2s;
+}
+
+@media screen and (max-width: 400px)  {
+
+    .form-box{
+      width: auto;  
+
+    }
+    
+}
+
+
